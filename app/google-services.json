@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704442997498",
+    "project_id": "muzeummobil-a6eca",
+    "storage_bucket": "muzeummobil-a6eca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704442997498:android:516e3d010d4b9fda184743",
+        "android_client_info": {
+          "package_name": "com.example.muzeumjegyfoglalas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdnTJ1GnotA_5OwmgPhhsEKhmpWavyWgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

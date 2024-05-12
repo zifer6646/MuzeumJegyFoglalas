@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Megvásárolt jegyeim"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- List of appointments -->
+    <ListView
+        android:id="@+id/appointments_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+
+        android:layout_marginTop="@dimen/marginA"
+        android:layout_marginLeft="@dimen/marginB"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginBottom="@dimen/marginA"
+        tools:ignore="MissingConstraints">
+        <!-- Add appointment button -->
+        <Button
+            android:id="@+id/add_appointment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="nAppointment"
+
+            android:text="Jegy vásárlás"/>
+
+        <!-- Logout button -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            android:text="Kijelentkezés"/>
+
+        <!-- Appointment item layout -->
+    </LinearLayout>
+
+</LinearLayout>

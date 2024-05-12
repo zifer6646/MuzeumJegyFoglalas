@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Új foglalás"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:gravity="center"/>
+
+    <TextView
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Időpont napja:"
+        android:layout_marginTop="@dimen/marginB"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/dateSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginB"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/marginB"
+        android:entries="@array/date_array" />
+
+
+    <!-- Appointment time -->
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginA"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:text="Időpont ideje:"
+        android:textSize="18sp"/>
+    <Spinner
+        android:id="@+id/appointment_time_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:entries="@array/appointment_times"/>
+
+    <!-- Appointment exhibition -->
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginA"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:text="Kiállítások:"
+        android:textSize="18sp"/>
+    <Spinner
+        android:id="@+id/appointment_exhibition_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:entries="@array/appointment_exhibitions"/>
+
+    <!-- Ticket  -->
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginA"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:text="Jegy típus:"
+        android:textSize="18sp"/>
+    <Spinner
+        android:id="@+id/appointment_ticketType_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/marginB"
+        android:layout_marginLeft="@dimen/marginB"
+        android:entries="@array/appointment_ticketTypes"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Save button -->
+        <Button
+            android:id="@+id/save_appointment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginB"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/marginB"
+            android:onClick="onSaveAppointmentButtonClick"
+
+            android:text="Mentés" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginB"
+            android:layout_marginRight="@dimen/marginB"
+            android:onClick="back"
+
+            android:text="Vissza" />
+    </LinearLayout>
+</LinearLayout>
